@@ -26,35 +26,11 @@ export default {
 	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
 		// for each, R2_BUCKET is required
 		const config: { [id: string]: RenderEnv; } = {
-			"cdn.erisa.cloud": {
+			"download.81keys.com": {
 				R2_BUCKET: env.PUB_BUCKET,
 				DIRECTORY_LISTING: true,
 				HIDE_HIDDEN_FILES: true,
 				DIRECTORY_CACHE_CONTROL: "max-age=86400"
-			},
-			"termux.lewd.tech": {
-				R2_BUCKET: env.TERMUX_BUCKET,
-				DIRECTORY_LISTING: true,
-				DIRECTORY_CACHE_CONTROL: "max-age=86400"
-			},
-			"obs.lewd.tech": {
-				R2_BUCKET: env.OBS_BUCKET,
-				DIRECTORY_LISTING: true,
-				DIRECTORY_CACHE_CONTROL: "max-age=86400"
-			},
-			"multi-render.erisa.workers.dev": {
-				R2_BUCKET: env.R2_BUCKET,
-				DIRECTORY_LISTING: true
-			},
-			"u.fl0.erisa.uk": {
-				R2_BUCKET: env.FL0_U_BUCKET,
-				INDEX_FILE: 'index.html',
-				NOTFOUND_FILE: '404.html'
-			},
-			"i.fl0.erisa.uk": {
-				R2_BUCKET: env.FL0_I_BUCKET,
-				INDEX_FILE: 'index.html',
-				NOTFOUND_FILE: '404.html'
 			}
 		}
 
