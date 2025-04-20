@@ -5,10 +5,10 @@ compatibility_date = "2025-04-20"
 workers_dev = true
 
 # you can use routes if you want, or remove this whole section to manage on the dashboard
-routes = [
-  { pattern = "download.81keys.com", custom_domain = true },
-
-]
+#routes = [
+#  { pattern = "download.81keys.com", custom_domain = true },
+#
+#]
 
 # disable if using free workers
 logpush = true
