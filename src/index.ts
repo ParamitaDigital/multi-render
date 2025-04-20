@@ -27,7 +27,7 @@ export default {
 		// for each, R2_BUCKET is required
 		const config: { [id: string]: RenderEnv; } = {
 			"download.81keys.com": {
-				R2_BUCKET: env.PUB_BUCKET,
+				R2_BUCKET: env.R2_BUCKET,
 				DIRECTORY_LISTING: true,
 				HIDE_HIDDEN_FILES: true,
 				DIRECTORY_CACHE_CONTROL: "max-age=86400"
