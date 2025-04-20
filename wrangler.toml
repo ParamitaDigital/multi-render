@@ -1,6 +1,6 @@
 name = "multi-render"
 main = "src/index.ts"
-compatibility_date = "2023-05-16"
+compatibility_date = "2025-04-20"
 
 workers_dev = true
 
