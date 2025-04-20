@@ -11,15 +11,6 @@ interface Env {
 	DIRECTORY_LISTING?: boolean
 	HIDE_HIDDEN_FILES?: boolean
 	DIRECTORY_CACHE_CONTROL?: string
-
-	// put extra buckets here
-	PUB_BUCKET: R2Bucket
-	UP_BUCKET: R2Bucket
-	CDN_BUCKET: R2Bucket
-	TERMUX_BUCKET: R2Bucket
-	OBS_BUCKET: R2Bucket
-	FL0_U_BUCKET: R2Bucket
-	FL0_I_BUCKET: R2Bucket
 }
 
 export default {
