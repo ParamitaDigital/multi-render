@@ -6,15 +6,7 @@ workers_dev = true
 
 # you can use routes if you want, or remove this whole section to manage on the dashboard
 routes = [
-  { pattern = "cdn.erisa.cloud", custom_domain = true },
-  { pattern = "obs.lewd.tech", custom_domain = true },
-  { pattern = "i.fl0.erisa.uk", custom_domain = true },
-  { pattern = "u.fl0.erisa.uk", custom_domain = true },
-  { pattern = "cdn-test.erisa.uk", custom_domain = true},
-
-  # i'm using routes for these two because my resizing worker doesnt play nice with custom domains
-  { pattern = "cdn.erisa.uk.lewd.tech/*", zone_name = "lewd.tech"},
-  { pattern = "up.erisa.uk.lewd.tech/*", zone_name = "lewd.tech" },
+  { pattern = "download.81keys.com", custom_domain = true },
 
 ]
 
@@ -63,43 +55,5 @@ DIRECTORY_CACHE_CONTROL = "no-store"
 # R2_BUCKET is required
 [[r2_buckets]]
 binding = "R2_BUCKET"
-bucket_name = "kot"
-preview_bucket_name = "kot"
-
-# Extra buckets go here. Make sure to include them in Env in index.ts before use.
-[[r2_buckets]]
-binding = "PUB_BUCKET"
-bucket_name = "public-data"
-preview_bucket_name = "public-data"
-
-
-[[r2_buckets]]
-binding = "UP_BUCKET"
-bucket_name = "ashcdn"
-preview_bucket_name = "ashcdn"
-
-[[r2_buckets]]
-binding = "CDN_BUCKET"
-bucket_name = "erisacdn"
-preview_bucket_name = "erisacdn"
-
-[[r2_buckets]]
-binding = "TERMUX_BUCKET"
-bucket_name = "termux"
-preview_bucket_name = "termux"
-
-[[r2_buckets]]
-binding = "OBS_BUCKET"
-bucket_name = "obs"
-preview_bucket_name = "obs"
-
-[[r2_buckets]]
-binding = "FL0_U_BUCKET"
-bucket_name = "fl0-u"
-preview_bucket_name = "fl0-u"
-
-
-[[r2_buckets]]
-binding = "FL0_I_BUCKET"
-bucket_name = "fl0-i"
-preview_bucket_name = "fl0-i"
+bucket_name = "9x9keys"
+preview_bucket_name = "9x9keys"
