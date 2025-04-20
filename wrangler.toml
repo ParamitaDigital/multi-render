@@ -11,7 +11,7 @@ workers_dev = true
 #]
 
 # disable if using free workers
-logpush = true
+# logpush = true
 
 # In multi-render, these variables control the DEFAULTS.
 # Any options that deviate from these are put in index.ts config object.
